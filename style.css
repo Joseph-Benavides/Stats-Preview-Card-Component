@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(7, 7, 35);
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    max-width: 1100px;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+}
+
+/* Image Section */
+.img-section {
+    background-image: url(./images/image-header-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(176, 117, 232);
+    background-blend-mode: multiply;
+    padding: 7em 10em;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+/* Info Section */
+.info-section {
+    padding: 2em 1.5em 0.5em 1.5em;
+    background-color: rgb(37, 21, 73);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    text-align: center;
+}
+
+.info-title {
+    padding: 0.5em 0;
+    font-size: 1.75rem;
+}
+
+.info-title span {
+    color: rgb(176, 117, 232);
+}
+
+.info-paragraph {
+    padding: 0.5em 0;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 300;
+    color: rgb(170, 170, 170);
+    line-height: 25px;
+}
+
+.info-data {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-data-element {
+    margin: 1em 0;
+}
+
+.info-data-element p {
+    margin: 0.5em 0;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: rgb(170, 170, 170);
+}
+
+@media (min-width: 850px) {
+    .container {
+        margin: 2em 1em;
+        flex-direction: row-reverse;
+        align-items: unset;
+        width: unset;
+    }
+    .img-section {
+        width: 50%;
+        border-top-left-radius: unset;
+        border-bottom-right-radius: 6px;
+    }
+    .info-section {
+        padding: 2.5em 5.5em 1.5em 3.5em;
+        width: 50%;
+        text-align: unset;
+        border-top-left-radius: 6px;
+        border-bottom-right-radius: unset;
+    }
+    .info-paragraph {
+        padding: 1em 0;
+    }
+    .info-title {
+        padding: 0.75em 0;
+    }
+    .info-data {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
